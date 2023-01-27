@@ -32,9 +32,13 @@ These Anchors in a regex string are the ^ and $, the ^ will represent the start 
 
 ### Quantifiers
 
+Quantifiers will  be the *, ?, and {}. In this situation the ? is showing that the # will be followed by 0 or 1 characters
 
+-  ?([a-f0-9]{6}|[a-f0-9]{3}) , quantifier is saying after the # it will be either 0 or 1 characters
 
 ### OR Operator
+
+
 
 ### Character Classes
 
