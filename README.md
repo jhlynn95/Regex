@@ -38,15 +38,21 @@ Quantifiers will  be the *, ?, and {}. In this situation the ? is showing that t
 
 ### OR Operator
 
-
+[a-f0-9]{6}|[a-f0-9]{3} the | in the middle is representing that it will either be 6 characters or 3
+OR operator in our example: |  Its purpose: Allows the user to match either the expression/characters on the left or the right. The | is positioned in between two seperate expressions.
 
 ### Character Classes
 
-### Flags
+/^#?([a-f0-9]{6}|[a-f0-9]{3})$/  The character class here is a-f0-9. The character class is the set of characters that is enclosed within the brackets. The a-f symbolize the range the hex code requires, meaning the code can begin with any letter between 'a though f'. Also the hex code has 0-9 attached immediately after the f, which also allows the hex code to begin with any digit from '0 to 9'
 
 ### Grouping and Capturing
 
+([a-f0-9]{6}|[a-f0-9]{3})  The () groups the regular expression between them. The grouping treats multiple characters as a single unit. This can proof useful when extracting information using any programming language. This group of data will be exposed in the form of an array. Values can be accessed using an index on the result of the match.
+The grouped expression is a bracket expression whose details are provided in the section below. Ultimately the end string anchor $ is applied to this grouping.
+
 ### Bracket Expressions
+
+[a-f0-9] Bracket expression is a regex that will match a specific pattern of characters alphabetic, numeric, special characters, and symbols defined within the brackets. The bracket [] expression indicates matching a string that has any lower case character between a-f or any integer between 0-9
 
 ### Greedy and Lazy Match
 
